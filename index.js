@@ -48,6 +48,7 @@ client.on(Events.InteractionCreate, async interection =>{
     }
     try{
         await command.execute(interection)
+        
     }catch(e){
         console.error(e)
         await interection.reply("houve um erro ao executar esse comando")
